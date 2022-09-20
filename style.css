@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Domine", serif;
+  font-weight: lighter;
+}
+
+/* GENERAL */
+.titleDiv {
+  text-align: center;
+  font-size: 3em;
+}
+
+.gold {
+  color: #DFAC8C;
+}
+
+.blue {
+  color: #254683;
+}
+
+/* HEADER */
+.header {
+  background-color: #071b29;
+  height: 100px;
+}
+.header h1 {
+  color: #DFAC8C;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #071b29;
+  text-transform: uppercase;
+  color: #FFF;
+}
+.main h1 {
+  font-size: 8em;
+}
+
+/* PRESENTATION */
+.presentation {
+  height: 40vh;
+  padding: 0 3vw;
+  display: flex;
+  align-items: center;
+}
+.presentation img {
+  border-radius: 10%;
+  float: left;
+  margin-right: 1em;
+}
+.presentation p {
+  background: -webkit-linear-gradient(right, #254683 20%, #DFAC8C 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: auto;
+  font-size: 3em;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* TESTIMONY */
+.testimony {
+  background-color: #071b29;
+  padding: 100px 0 150px 0;
+}
+.testimony .titleDiv {
+  color: #FFF;
+  padding: 45px 0 100px 0;
+  text-transform: uppercase;
+}
+
+.comment {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  border-bottom: 1px solid #DFAC8C;
+}
+.comment h2 {
+  font-size: 50px;
+  padding-right: 20px;
+  color: #DFAC8C;
+}
+.comment img {
+  height: 120px;
+  border-radius: 50%;
+  padding-right: 20px;
+}
+
+/* PROJECT */
+.project {
+  padding-bottom: 200px;
+}
+.project .titleDiv {
+  color: #254683;
+  padding: 100px 0 100px 0;
+  text-transform: uppercase;
+}
+.project .exempleProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project .exempleProject img {
+  max-width: 100vw;
+  margin-bottom: 30px;
+}
+.project .exempleProject h2 {
+  color: #DFAC8C;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.project .exempleProject p {
+  color: #254683;
+  font-size: 20px;
+}
+
+/* PROJECT */
+.skills {
+  padding: 0 5%;
+  height: 850px;
+}
+.skills img {
+  max-width: 50%;
+  max-height: 750px;
+  float: right;
+  border-radius: 20px;
+}
+.skills p {
+  font-size: 50px;
+}
+
+.formation {
+  padding-top: 40px;
+}
+.formation h3 {
+  font-size: 35px;
+  color: #DFAC8C;
+  margin: 50px 0 20px 0;
+}
+.formation p {
+  font-size: 22px;
+  margin-bottom: 17px;
+  color: #254683;
+}
+
+.technos {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 150px;
+}
+.technos img {
+  height: 100px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #071b29;
+  height: 500px;
+  color: #DFAC8C;
+  text-align: center;
+  padding: 80px 5% 0 5%;
+}
+.footer h1 {
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+}
+.footer .container .contact {
+  display: flex;
+  flex-direction: column;
+}
+.footer .container .contact h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.footer .container .contact p {
+  font-size: 20px;
+  color: #FFF;
+  margin-bottom: 30px;
+}
+.footer .container .social {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.footer .container .social h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.footer .container .social p {
+  font-size: 20px;
+  color: #FFF;
+}
+.footer .container .social p a {
+  text-decoration: none;
+  color: #FFF;
+}/*# sourceMappingURL=style.css.map */

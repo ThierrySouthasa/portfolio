@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Domine', serif;
+    font-weight: lighter;
+}
+
+/* GENERAL */
+
+$darkblue : #071b29;
+$blue : #254683;
+$gold : #DFAC8C;
+
+.titleDiv {
+    text-align: center;
+    font-size: 3em;
+}
+
+.gold {
+    color: $gold;
+}
+
+.blue {
+    color: $blue;
+}
+
+/* HEADER */
+
+.header {
+
+    background-color: $darkblue;
+    height: 100px;
+
+    h1 {
+        color: $gold;
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+
+/* MAIN */
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $darkblue;
+    text-transform: uppercase;
+    color: #FFF;
+
+    h1 {
+        font-size: 8em;
+    }
+
+}
+
+/* PRESENTATION */
+
+.presentation {
+
+    height: 40vh;
+    padding: 0 3vw;
+    display: flex;
+    align-items: center;
+
+    img {
+        border-radius: 10%;
+        float: left;
+        margin-right: 1em;
+    }
+
+    p {
+        background: -webkit-linear-gradient(right, $blue 20%, $gold 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        padding: auto;
+        font-size: 3em;
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* TESTIMONY */
+
+.testimony {
+
+    background-color: $darkblue;
+    padding: 100px 0 150px 0;
+
+    .titleDiv {
+        color: #FFF;
+        padding: 45px 0 100px 0;
+        text-transform: uppercase;
+    }
+}
+
+.comment {
+
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border-bottom: 1px solid $gold;
+
+
+    h2 {
+        font-size: 50px;
+        padding-right: 20px;
+        color: $gold;
+    }
+
+    img {
+        height: 120px;
+        border-radius: 50%;
+        padding-right: 20px;
+    }
+}
+
+/* PROJECT */
+
+.project {
+
+    padding-bottom: 200px;
+
+    .titleDiv {
+        color: $blue;
+        padding: 100px 0 100px 0;
+        text-transform: uppercase;
+    }
+
+    .exempleProject {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: 100vw;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: $gold;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: $blue;
+            font-size: 20px;
+        }
+
+    }
+}
+
+/* PROJECT */
+
+.skills {
+
+    padding: 0 5%;
+    height: 850px;
+
+    img {
+        max-width: 50%;
+        max-height: 750px;
+        float: right;
+        border-radius: 20px;
+    }
+
+    p {
+        font-size: 50px;
+    }
+}
+
+.formation {
+
+    padding-top: 40px;
+
+    h3 {
+        font-size: 35px;
+        color: $gold;
+        margin: 50px 0 20px 0;
+    }
+
+    p {
+        font-size: 22px;
+        margin-bottom: 17px;
+        color: $blue;
+    }
+}
+
+.technos {
+
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 150px;
+
+    img {
+        height: 100px;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+
+    background-color: $darkblue;
+    height: 500px;
+    color: $gold;
+    text-align: center;
+    padding: 80px 5% 0 5%;
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 100px;
+    }
+
+    .container {
+
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 80px;
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 20px;
+                color: #FFF;
+                margin-bottom: 30px;
+            }
+        }
+
+        .social {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+
+            h3 {
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 20px;
+                color: #FFF;
+
+                a {
+                    text-decoration: none;
+                    color: #FFF;
+                }
+            }
+
+        }
+    }
+}
