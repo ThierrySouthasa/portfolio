@@ -55,8 +55,11 @@ $gold : #DFAC8C;
     color: #FFF;
 
     h1 {
-        font-size: 8em;
+        position: relative;
+        font-size: 8vw;
+        text-transform: uppercase;
     }
+
 
 }
 
@@ -76,15 +79,27 @@ $gold : #DFAC8C;
     }
 
     p {
-        background: -webkit-linear-gradient(right, $blue 20%, $gold 80%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
         padding: auto;
         font-size: 3em;
         display: flex;
         text-align: center;
         margin: 0 auto;
+        background: linear-gradient(90deg, $darkblue, $gold, $darkblue);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        animation: animate 10s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+        @keyframes animate {
+            0% {
+                background-position: -900%;
+            }
+
+            100% {
+                background-position: 950%;
+            }
+        }
     }
 }
 
@@ -218,21 +233,20 @@ $gold : #DFAC8C;
 .footer {
 
     background-color: $darkblue;
-    height: 500px;
     color: $gold;
     text-align: center;
     padding: 80px 5% 0 5%;
 
     h1 {
         font-size: 40px;
-        margin-bottom: 100px;
+        margin-bottom: 120px;
     }
 
     .container {
 
         display: flex;
         justify-content: space-evenly;
-        margin-bottom: 80px;
+        margin-bottom: 85px;
 
         .contact {
             display: flex;
@@ -240,7 +254,7 @@ $gold : #DFAC8C;
 
             h3 {
                 font-size: 25px;
-                margin-bottom: 30px;
+                margin-bottom: 40px;
             }
 
             p {
@@ -253,16 +267,17 @@ $gold : #DFAC8C;
         .social {
             display: flex;
             flex-direction: column;
-            margin-bottom: 100px;
+            margin-bottom: 30px;
 
             h3 {
                 font-size: 25px;
-                margin-bottom: 30px;
+                margin-bottom: 40px;
             }
 
             p {
                 font-size: 20px;
                 color: #FFF;
+                margin-bottom: 30px;
 
                 a {
                     text-decoration: none;
@@ -271,5 +286,9 @@ $gold : #DFAC8C;
             }
 
         }
+    }
+
+    .copyright {
+        padding-bottom: 50px;
     }
 }

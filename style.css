@@ -45,7 +45,9 @@ body {
   color: #FFF;
 }
 .main h1 {
-  font-size: 8em;
+  position: relative;
+  font-size: 8vw;
+  text-transform: uppercase;
 }
 
 /* PRESENTATION */
@@ -61,15 +63,25 @@ body {
   margin-right: 1em;
 }
 .presentation p {
-  background: -webkit-linear-gradient(right, #254683 20%, #DFAC8C 80%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
   padding: auto;
   font-size: 3em;
   display: flex;
   text-align: center;
   margin: 0 auto;
+  background: linear-gradient(90deg, #071b29, #DFAC8C, #071b29);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  animation: animate 10s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -900%;
+  }
+  100% {
+    background-position: 950%;
+  }
 }
 
 /* TESTIMONY */
@@ -176,19 +188,18 @@ body {
 /* FOOTER */
 .footer {
   background-color: #071b29;
-  height: 500px;
   color: #DFAC8C;
   text-align: center;
   padding: 80px 5% 0 5%;
 }
 .footer h1 {
   font-size: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 .footer .container {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
 }
 .footer .container .contact {
   display: flex;
@@ -196,7 +207,7 @@ body {
 }
 .footer .container .contact h3 {
   font-size: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .footer .container .contact p {
   font-size: 20px;
@@ -206,17 +217,21 @@ body {
 .footer .container .social {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .footer .container .social h3 {
   font-size: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .footer .container .social p {
   font-size: 20px;
   color: #FFF;
+  margin-bottom: 30px;
 }
 .footer .container .social p a {
   text-decoration: none;
   color: #FFF;
+}
+.footer .copyright {
+  padding-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */
