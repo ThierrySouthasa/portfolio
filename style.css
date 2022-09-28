@@ -1,17 +1,18 @@
 * {
   margin: 0;
   padding: 0;
+  font-weight: lighter;
 }
 
 body {
   font-family: "Domine", serif;
-  font-weight: lighter;
 }
 
 /* GENERAL */
 .titleDiv {
   text-align: center;
   font-size: 3em;
+  font-weight: lighter;
 }
 
 .gold {
@@ -20,6 +21,10 @@ body {
 
 .blue {
   color: #254683;
+}
+
+.lightblue {
+  color: #61DAFB;
 }
 
 /* HEADER */
@@ -31,6 +36,7 @@ body {
   color: #DFAC8C;
   text-align: center;
   padding: 15px 0;
+  font-weight: lighter;
 }
 
 /* MAIN */
@@ -47,12 +53,25 @@ body {
 .main h1 {
   position: relative;
   font-size: 8vw;
-  text-transform: uppercase;
+  font-weight: lighter;
+}
+.main img {
+  animation: 3s ease-in 3s infinite alternate goRight;
+  margin-top: 50px;
+  height: 100px;
+}
+@keyframes goRight {
+  from {
+    transform: translateX(0px) rotate(0deg);
+  }
+  to {
+    transform: translateX(200%) rotate(90deg);
+  }
 }
 
 /* PRESENTATION */
 .presentation {
-  height: 40vh;
+  height: 46vh;
   padding: 0 3vw;
   display: flex;
   align-items: center;
@@ -72,7 +91,7 @@ body {
   background-repeat: no-repeat;
   background-size: 90%;
   animation: animate 10s linear infinite;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 @keyframes animate {
@@ -88,6 +107,7 @@ body {
 .testimony {
   background-color: #071b29;
   padding: 100px 0 150px 0;
+  height: 950px;
 }
 .testimony .titleDiv {
   color: #FFF;
@@ -117,12 +137,42 @@ body {
   padding-right: 20px;
 }
 
+.com {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px auto;
+  height: 200px;
+  background-color: #DFAC8C;
+  color: #FFF;
+  width: 500px;
+  padding: 0 15px;
+  border-radius: 10px;
+  transition: all 3s;
+}
+.com h4 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #FFF;
+}
+.com p {
+  text-align: center;
+}
+
+.com:hover {
+  transition: all 3s;
+  width: 90%;
+  padding: 0 auto;
+}
+
 /* PROJECT */
 .project {
-  padding-bottom: 200px;
+  padding-bottom: 150px;
 }
 .project .titleDiv {
-  color: #254683;
+  margin-top: 40px;
+  color: #124870;
   padding: 100px 0 100px 0;
   text-transform: uppercase;
 }
@@ -131,6 +181,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .project .exempleProject img {
   max-width: 100vw;
@@ -138,37 +189,39 @@ body {
 }
 .project .exempleProject h2 {
   color: #DFAC8C;
-  font-size: 30px;
+  font-size: 22px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-weight: lighter;
 }
 .project .exempleProject p {
   color: #254683;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 /* PROJECT */
 .skills {
-  padding: 0 5%;
-  height: 850px;
-}
-.skills img {
-  max-width: 50%;
-  max-height: 750px;
-  float: right;
-  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #071b29;
+  height: 400px;
 }
 .skills p {
   font-size: 50px;
 }
 
 .formation {
-  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .formation h3 {
   font-size: 35px;
   color: #DFAC8C;
-  margin: 50px 0 20px 0;
+  margin: 100px 0 20px 0;
+  font-weight: lighter;
 }
 .formation p {
   font-size: 22px;
@@ -179,7 +232,7 @@ body {
 .technos {
   display: flex;
   justify-content: space-evenly;
-  padding-bottom: 150px;
+  padding: 100px 0 100px 0;
 }
 .technos img {
   height: 100px;
@@ -195,6 +248,7 @@ body {
 .footer h1 {
   font-size: 40px;
   margin-bottom: 120px;
+  font-weight: lighter;
 }
 .footer .container {
   display: flex;
@@ -208,6 +262,7 @@ body {
 .footer .container .contact h3 {
   font-size: 25px;
   margin-bottom: 40px;
+  font-weight: lighter;
 }
 .footer .container .contact p {
   font-size: 20px;
@@ -222,6 +277,7 @@ body {
 .footer .container .social h3 {
   font-size: 25px;
   margin-bottom: 40px;
+  font-weight: lighter;
 }
 .footer .container .social p {
   font-size: 20px;

@@ -1,11 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-weight: lighter;
 }
 
 body {
     font-family: 'Domine', serif;
-    font-weight: lighter;
 }
 
 /* GENERAL */
@@ -13,10 +13,12 @@ body {
 $darkblue : #071b29;
 $blue : #254683;
 $gold : #DFAC8C;
+$lightblue : #61DAFB;
 
 .titleDiv {
     text-align: center;
     font-size: 3em;
+    font-weight: lighter;
 }
 
 .gold {
@@ -25,6 +27,10 @@ $gold : #DFAC8C;
 
 .blue {
     color: $blue;
+}
+
+.lightblue {
+    color: $lightblue;
 }
 
 /* HEADER */
@@ -38,6 +44,7 @@ $gold : #DFAC8C;
         color: $gold;
         text-align: center;
         padding: 15px 0;
+        font-weight: lighter;
     }
 }
 
@@ -57,17 +64,31 @@ $gold : #DFAC8C;
     h1 {
         position: relative;
         font-size: 8vw;
-        text-transform: uppercase;
+        font-weight: lighter;
     }
 
+    img {
+        animation: 3s ease-in 3s infinite alternate goRight;
+        margin-top: 50px;
+        height: 100px;
+    }
 
+    @keyframes goRight {
+        from {
+            transform: translateX(0px) rotate(0deg);
+        }
+
+        to {
+            transform: translateX(200%) rotate(90deg);
+        }
+    }
 }
 
 /* PRESENTATION */
 
 .presentation {
 
-    height: 40vh;
+    height: 46vh;
     padding: 0 3vw;
     display: flex;
     align-items: center;
@@ -88,7 +109,7 @@ $gold : #DFAC8C;
         background-repeat: no-repeat;
         background-size: 90%;
         animation: animate 10s linear infinite;
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: rgba(255, 255, 255, 0);
 
         @keyframes animate {
@@ -109,6 +130,7 @@ $gold : #DFAC8C;
 
     background-color: $darkblue;
     padding: 100px 0 150px 0;
+    height: 950px;
 
     .titleDiv {
         color: #FFF;
@@ -143,14 +165,47 @@ $gold : #DFAC8C;
     }
 }
 
+.com {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px auto;
+    height: 200px;
+    background-color: $gold;
+    color: #FFF;
+    width: 500px;
+    padding: 0 15px;
+    border-radius: 10px;
+    transition: all 3s;
+
+    h4 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 15px;
+        color: #FFF;
+    }
+
+    p {
+        text-align: center;
+    }
+
+}
+
+.com:hover {
+    transition: all 3s;
+    width: 90%;
+    padding: 0 auto;
+}
+
 /* PROJECT */
 
 .project {
 
-    padding-bottom: 200px;
+    padding-bottom: 150px;
 
     .titleDiv {
-        color: $blue;
+        margin-top: 40px;
+        color: #124870;
         padding: 100px 0 100px 0;
         text-transform: uppercase;
     }
@@ -160,6 +215,7 @@ $gold : #DFAC8C;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 40px;
 
         img {
             max-width: 100vw;
@@ -168,14 +224,15 @@ $gold : #DFAC8C;
 
         h2 {
             color: $gold;
-            font-size: 30px;
+            font-size: 22px;
             text-transform: uppercase;
             margin-bottom: 10px;
+            font-weight: lighter;
         }
 
         p {
             color: $blue;
-            font-size: 20px;
+            font-size: 15px;
         }
 
     }
@@ -184,16 +241,11 @@ $gold : #DFAC8C;
 /* PROJECT */
 
 .skills {
-
-    padding: 0 5%;
-    height: 850px;
-
-    img {
-        max-width: 50%;
-        max-height: 750px;
-        float: right;
-        border-radius: 20px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $darkblue;
+    height: 400px;
 
     p {
         font-size: 50px;
@@ -202,12 +254,16 @@ $gold : #DFAC8C;
 
 .formation {
 
-    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     h3 {
         font-size: 35px;
         color: $gold;
-        margin: 50px 0 20px 0;
+        margin: 100px 0 20px 0;
+        font-weight: lighter;
     }
 
     p {
@@ -221,7 +277,7 @@ $gold : #DFAC8C;
 
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 150px;
+    padding: 100px 0 100px 0;
 
     img {
         height: 100px;
@@ -240,6 +296,7 @@ $gold : #DFAC8C;
     h1 {
         font-size: 40px;
         margin-bottom: 120px;
+        font-weight: lighter;
     }
 
     .container {
@@ -255,6 +312,7 @@ $gold : #DFAC8C;
             h3 {
                 font-size: 25px;
                 margin-bottom: 40px;
+                font-weight: lighter;
             }
 
             p {
@@ -272,6 +330,7 @@ $gold : #DFAC8C;
             h3 {
                 font-size: 25px;
                 margin-bottom: 40px;
+                font-weight: lighter;
             }
 
             p {
@@ -291,4 +350,5 @@ $gold : #DFAC8C;
     .copyright {
         padding-bottom: 50px;
     }
+
 }
