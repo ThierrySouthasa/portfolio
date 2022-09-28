@@ -109,7 +109,7 @@ $lightblue : #61DAFB;
         background-repeat: no-repeat;
         background-size: 90%;
         animation: animate 10s linear infinite;
-        background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: rgba(255, 255, 255, 0);
 
         @keyframes animate {
@@ -149,8 +149,6 @@ $lightblue : #61DAFB;
     align-items: center;
     justify-content: center;
     color: #FFF;
-    border-bottom: 1px solid $gold;
-
 
     h2 {
         font-size: 50px;
@@ -260,15 +258,15 @@ $lightblue : #61DAFB;
     justify-content: center;
 
     h3 {
-        font-size: 35px;
+        font-size: 40px;
         color: $gold;
-        margin: 100px 0 20px 0;
+        margin: 150px 0 50px 0;
         font-weight: lighter;
     }
 
     p {
         font-size: 22px;
-        margin-bottom: 17px;
+        margin-bottom: 20px;
         color: $blue;
     }
 }
@@ -277,7 +275,7 @@ $lightblue : #61DAFB;
 
     display: flex;
     justify-content: space-evenly;
-    padding: 100px 0 100px 0;
+    padding: 150px 0 150px 0;
 
     img {
         height: 100px;

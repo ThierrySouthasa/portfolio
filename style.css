@@ -91,7 +91,7 @@ body {
   background-repeat: no-repeat;
   background-size: 90%;
   animation: animate 10s linear infinite;
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 @keyframes animate {
@@ -124,7 +124,6 @@ body {
   align-items: center;
   justify-content: center;
   color: #FFF;
-  border-bottom: 1px solid #DFAC8C;
 }
 .comment h2 {
   font-size: 50px;
@@ -218,21 +217,21 @@ body {
   justify-content: center;
 }
 .formation h3 {
-  font-size: 35px;
+  font-size: 40px;
   color: #DFAC8C;
-  margin: 100px 0 20px 0;
+  margin: 150px 0 50px 0;
   font-weight: lighter;
 }
 .formation p {
   font-size: 22px;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   color: #254683;
 }
 
 .technos {
   display: flex;
   justify-content: space-evenly;
-  padding: 100px 0 100px 0;
+  padding: 150px 0 150px 0;
 }
 .technos img {
   height: 100px;
